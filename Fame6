@@ -1,0 +1,35 @@
+import React from "react";
+export const Frame = (): JSX.Element => {
+const skillsData = {
+softskills: "มทกษะการสอสารใหเขาใจใดงาย เขากบผคนใดด ทงานกลมไดด
+}; hardskills: "การเลนดนตร, การออกแบบบาน, การคดวธการแกปัญหาอย่างสร
+return (
+<div className="bg-white grid justify-items-center [align-iten
+<div className="bg-white overflow-hidden w-[800px] h-[499px]
+<header className="absolute w-[803px] h-[55px] top-0 left-
+<img
+src="/image-1.png"
+alt="Profile"
+className="relative w-[46px] h-[46px] top-1 left-[18p)
+/>
+</header>
+<footer className="absolute w-[803px] h-[42px] top-[457px]
+<main className="absolute top-[92px] left-11">
+<h1 className="[font-family: 'Inter-Regular', Helvetica]
+ทกษะ
+</h1>
+<div className="flex gap-[35px] mt-[-3px]">
+<div className="w-[152px] h-[90px] bg-[#d9d9d9]" />
+<div className="w-[179px] h-[90px] bg-[#d9d9d9]" />
+</div>
+<section className="mt-[33px]">
+<p className="[font-family: 'Inter-
+Soft Skills: {skillsData.softsl
+</p>
+</p>
+</section>
+</main>
+</div>
+</div>
+);
+};
