@@ -1,0 +1,43 @@
+import React from "react";
+
+export const Frame = (): JSX.Element => {
+  const menuItems = [
+    { text: "-หนาแรก", id: "home" },
+    { text: "-ผลงาน", id: "portfolio" },
+    { text: "-การศกษา", id: "education" },
+    { text: "-เกยรตคณ", id: "honors" },
+    { text: "-ทกษะ", id: "skills" },
+    { text: "-ตดตอ", id: "contact" },
+  ];
+
+  return (
+    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <div className="bg-white w-[287px] h-[563px] relative">
+        <div className="h-10 top-0 bg-[#fc7aff] absolute w-[287px] left-0" />
+
+        <div className="h-[37px] top-[526px] bg-[#8ab9ff] absolute w-[287px] left-0" />
+
+        <nav role="navigation" aria-label="Main menu">
+          {menuItems.map((item, index) => (
+            <div
+              key={item.id}
+              className={`top-[${72 + index * 45}px] left-[25px] absolute [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal] whitespace-nowrap`}
+            >
+              {item.text}
+            </div>
+          ))}
+        </nav>
+
+        <div className="absolute w-[53px] h-6 top-[252px] left-[25px]">
+          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+            -ทกษะ
+          </div>
+
+          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+            -ทกษะ
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
