@@ -1,0 +1,28 @@
+import React from "react";
+export const Frame = (): JSX.Element => {
+const cardData [
+{ id: 1, width: 148, height: 87, left: 87 }, { id: 2, width: 132, height: 88, left: 270}, { id: 3, width: 163, height: 87, left: 431 },
+];
+return (
+<div className="bg-white grid justify-items-center [align-item
+<div className="bg-white overflow-hidden w-[800px] h-[439px
+<header className="absolute w-[803px] h-[55px] top-e left
+<div className="relative w-[46px] h-[46px] top-1 left-[
+</header>
+<main>
+<h1 className="absolute top-[81px] left-[101px] [font-fa
+เกยรตคณ
+</h1>
+<section className="grid-container">
+{cardData.map((card, index) => (
+<div
+key={card.id}
+className={w-[${card.width}px] h-[${card.height}
+role="img"
+aria-label={ Card ${card.id}}
+))}
+</section>
+</main>
+</div>
+</div>
+);
