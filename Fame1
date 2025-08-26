@@ -1,0 +1,63 @@
+import React from "react";
+
+export const Frame = (): JSX.Element => {
+  const studentInfo = {
+    name: "นายมงคล เกยรตเกษมชย",
+    class: "ม.6/2 เลขท23",
+    school: "โรงเรยนสวนกหลาบวทยาลย นนทบร",
+  };
+
+  const introduction = {
+    greeting: "สวสดครบ ผมชออกคว อาย18 เปนนกเรยนชนมธยมศกษาชนปท  6",
+    interests: "ชอบเรยนชววทยา ขยน อดทนครบ",
+    goals: "มเปาหมายอยากจะศกษาตอคณะแพทยศาสตรมหาลยมหดล ครบ",
+  };
+
+  const motto = "ความพยายาม ไปสเสนทางความสเรจ";
+
+  return (
+    <main className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <article className="bg-white w-[803px] h-[472px] relative">
+        <header className="absolute w-[803px] h-[55px] top-0 left-0 bg-[#f991ff]">
+          <img
+            src="/image-1.png"
+            alt="Profile"
+            className="relative w-[46px] h-[46px] top-1 left-3.5 aspect-[1] bg-cover bg-[50%_50%]"
+          />
+        </header>
+
+        <footer className="absolute w-[803px] h-[42px] top-[430px] left-0 bg-[#98cdff]" />
+
+        <section className="w-[405px] top-[97px] left-[211px] absolute [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+          <div>{studentInfo.name}</div>
+          <div>{studentInfo.class}</div>
+          <div>{studentInfo.school}</div>
+        </section>
+
+        <section className="absolute w-[524px] h-[72px] top-[239px] left-[47px]">
+          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+            <p>
+              {introduction.greeting}
+              <br />
+              {introduction.interests}
+            </p>
+          </div>
+
+          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+            <p>
+              {introduction.greeting}
+              <br />
+              {introduction.interests}
+              <br />
+              {introduction.goals}
+            </p>
+          </div>
+        </section>
+
+        <section className="w-[301px] top-[397px] left-[496px] absolute [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+          {motto}
+        </section>
+      </article>
+    </main>
+  );
+};
