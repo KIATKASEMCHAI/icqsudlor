@@ -1,0 +1,43 @@
+import React from "react";
+
+export const Frame = (): JSX.Element => {
+  const portfolioItems = [
+    { id: 1, image: null },
+    { id: 2, image: null },
+    { id: 3, image: null },
+  ];
+
+  return (
+    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <div className="bg-white w-[803px] h-[439px] relative">
+        <div className="absolute w-[803px] h-[42px] top-[397px] left-0 bg-[#98cdff]" />
+
+        <h1 className="w-[115px] top-16 left-[104px] text-[40px] absolute [font-family:'Inter-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
+          ผลงาน
+        </h1>
+
+        {portfolioItems.map((item, index) => (
+          <div
+            key={item.id}
+            className={`absolute h-[121px] top-[149px] bg-[#d9d9d9] ${
+              index === 0
+                ? "w-[194px] left-[51px]"
+                : index === 1
+                  ? "w-[186px] left-[259px]"
+                  : "w-[189px] left-[459px] h-[122px]"
+            }`}
+          />
+        ))}
+
+        <p className="w-[465px] top-[303px] left-[51px] text-xl absolute [font-family:'Inter-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
+          -ผลงานชนนทใหผมไดทกษะการทงานเปนทม การเขาสงคม
+          การใชทกษะการวเคราะหอยางสรางสรรค
+        </p>
+
+        <header className="absolute w-[803px] h-[55px] top-0 left-0 bg-[url(/rectangle-2.svg)] bg-[100%_100%]">
+          <div className="relative w-[46px] h-[46px] top-1 left-[5px] aspect-[1] bg-[url(/image-1.png)] bg-cover bg-[50%_50%]" />
+        </header>
+      </div>
+    </div>
+  );
+};
