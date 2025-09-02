@@ -2,18 +2,18 @@ import React from "react";
 
 export const Frame = (): JSX.Element => {
   const studentInfo = {
-    name: "นายมงคล เกยรตเกษมชย",
-    class: "ม.6/2 เลขท23",
-    school: "โรงเรยนสวนกหลาบวทยาลย นนทบร",
+    name: "นายมงคล เกียรติเกษมชัย",
+    class: "ม.6/2 เลขที่ 23",
+    school: "โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี",
   };
 
   const introduction = {
-    greeting: "สวสดครบ ผมชออกคว อาย18 เปนนกเรยนชนมธยมศกษาชนปท  6",
-    interests: "ชอบเรยนชววทยา ขยน อดทนครบ",
-    goals: "มเปาหมายอยากจะศกษาตอคณะแพทยศาสตรมหาลยมหดล ครบ",
+    greeting: "สวัสดีครับ ผมชื่ออิ๊กคิว อายุ 18 เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6",
+    interests: "ชอบเรียนชีววิทยา ขยัน อดทนครับ",
+    goals: "มีเป้าหมายอยากจะศึกษาต่อคณะแพทยศาสตร์มหาวิทยาลัยมหิดล ครับ",
   };
 
-  const motto = "ความพยายาม ไปสเสนทางความสเรจ";
+  const motto = "ความพยายาม ไปสู่เส้นทางความสำเร็จ";
 
   return (
     <main className="bg-white grid justify-items-center [align-items:start] w-screen">
@@ -34,16 +34,8 @@ export const Frame = (): JSX.Element => {
           <div>{studentInfo.school}</div>
         </section>
 
-        <section className="absolute w-[524px] h-[72px] top-[239px] left-[47px]">
-          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
-            <p>
-              {introduction.greeting}
-              <br />
-              {introduction.interests}
-            </p>
-          </div>
-
-          <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+        <section className="absolute w-[524px] h-[120px] top-[239px] left-[47px]">
+          <div className="[font-family:'Inter-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
             <p>
               {introduction.greeting}
               <br />
